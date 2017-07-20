@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "alma_ma",
   "license": "MIT",
+  "scripts": {
+    "webpack" : "webpack --config webpack.config.js --progress --display-modules --display-reasons --colors"
+  },
   "dependencies": {
     "css-loader": "^0.28.4",
     "style-loader": "^0.18.2",

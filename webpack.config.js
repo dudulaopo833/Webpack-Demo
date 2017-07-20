@@ -4,12 +4,13 @@ module.exports ={
 	entry: {app: "./src/app.js"},
 	output: {
 		path: __dirname + "/dist",
-		filename: "[name]-[hash].js" //entry should be object, then can use [name]
+		filename: "js/[name]-[hash].js" //entry should be object, then can use [name]
 	},
 	plugins:[
 		new htmlWebpackPlugin({
 			template: "index.html",
-			filename: "index-[hash].html"
+			filename: "index-[hash].html",
+			inject: "head"
 		})
 	]
 		

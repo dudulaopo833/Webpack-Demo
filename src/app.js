@@ -1,7 +1,7 @@
-var str = require('./script/main.js');
+import layer from './src/components/layer.js';
 
-function hello(src){
-	alert(src);
-}
+const App = () => {
+	console.log(layer);
+};
 
-hello(str());
+new App();

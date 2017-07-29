@@ -5,10 +5,14 @@
   "main": "index.js",
   "author": "alma_ma",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "webpack": "npm run clean && webpack --config webpack.config.js --display-modules --display-reasons --progress --colors"
+  },
   "dependencies": {
     "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.29.0",
+    "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.3.0"
   }

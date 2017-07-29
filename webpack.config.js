@@ -12,6 +12,11 @@ module.exports ={
 			filename: "index-[hash].html",
 			inject: "head"
 		})
-	]
+	],
+	module: {
+		rules: [
+			use
+		]
+	}
 		
-}
+};
